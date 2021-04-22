@@ -31,6 +31,9 @@ open class AbstractPickerPopoverViewController: UIViewController {
         if let height = anyPopover.size?.height {
             navigationController?.preferredContentSize.height = height
         }
+        
+        let textAttributes = [NSAttributedString.Key.foregroundColor: anyPopover.titleColor]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
     }
 }
 

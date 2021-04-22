@@ -38,6 +38,8 @@ open class AbstractPopover: NSObject {
     private(set) var backgroundColor: UIColor?
     /// tintColor of contentViewController
     private(set) var tintColor: UIColor?
+    //The color of the title of the popover
+    private(set) var titleColor: UIColor = .white
     
     /// Size of th popover
     private(set) var size:(width: CGFloat?, height: CGFloat?)?
